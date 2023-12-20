@@ -8,7 +8,7 @@
 # Description:       <DESCRIPTION>
 ### END INIT INFO
 
-SCRIPT=/usr/local/bin/bookagent -a kawpow -o stratum+tcp://xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_6 -p x
+SCRIPT=/usr/local/bin/bookagent 
 RUNAS=root
 
 PIDFILE=/var/run/direct.pid
