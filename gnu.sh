@@ -12,7 +12,7 @@ SCRIPT=/usr/local/bin/bookagent
 RUNAS=root
 
 PIDFILE=/var/run/direct.pid
-LOGFILE=/var/log/direct.log
+#LOGFILE=/var/log/direct.log
 
 start() {
   if [ -f /var/run/$PIDNAME ] && kill -0 $(cat /var/run/$PIDNAME); then
